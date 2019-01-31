@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 36, 36);
+}
+
+section{
+    margin: 0;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rosto{
+    width: 275px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: radial-gradient(rgb(255, 187, 0) 20%,rgb(168, 105, 9));
+    border-radius: 50%;
+    border: 3px solid #8C5323;
+}
+
+.rosto>div:nth-child(1){
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.olhos{
+    width: 30px;
+    height: 35px;
+    border-radius: 50%;
+    background-image: linear-gradient( #4B370B, #895021)
+}
+
+.boca{
+    width: 55px;
+    height: 65px;
+    border-radius: 50%;
+    background-image: linear-gradient( #4B370B, #895021 )
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
