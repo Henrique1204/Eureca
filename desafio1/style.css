@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +24,9 @@ section{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-image: radial-gradient(rgb(255, 187, 0) 20%,rgb(168, 105, 9));
+    background-image: radial-gradient(rgb(255, 187, 0), rgb(255, 187, 0),rgb(255, 187, 0), rgb(173, 104, 0), rgb(110, 66, 0));
     border-radius: 50%;
-    border: 3px solid #8C5323;
+    border: 1px solid black;
 }
 
 .rosto>div:nth-child(1){
