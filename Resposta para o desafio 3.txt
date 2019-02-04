@@ -1,0 +1,25 @@
+Pra solucionar o problema dos ovos pode ser usado um algoritmo de busca binária, onde tudo o que é preciso fazer é cortar o número de possibilidades pela metade até encontrar o N, mas devido a ter duas chances de errar se torna mais difícil de se encontrar, porém mesmo não encontrando N, ainda é o caminho mais rápido. segue a baixa um exemplo de como ficaria:
+
+- Enquanto tiver ovos, repita
+- Divida o número total de andares por 2 para chegar na metade dos andares, no caso 100/2 = 50.
+- Agora some a metade do total com o anda de menor número, no caso 50 + 0 = 50.
+- Jogue o ovo.
+	Se o ovo quebrar: 
+		o N está entre 50 e 0.
+		exclua os andares acima de 50 e volte a dividir.
+	Senão:
+		o N está entre 100 e 50.
+		exclua os andares abaixo de 50 e volte a dividir.
+
+	"repetindo o processo mais uma vez e supondo que o ovo tenha se quebrado"
+
+- Divida o número total de andares que sobraram por 2 para chegar na metade dos andares, no caso 50/2 = 25.
+- Agora some a metade do total com o anda de menor número, no caso 25 + 0 = 25.
+- Jogue o ovo.
+	Se o ovo quebrar:
+		o N está entre 25 e 0.
+	Senão:
+		o N está entre 50 e 25.
+
+por ter apenas dois ovos o algoritmo se encerraria por aqui, o algoritmo não encontrou o N, mas conseguiu diminuir as possibilidades de 100, para 25.  
+
