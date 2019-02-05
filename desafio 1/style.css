@@ -17,6 +17,30 @@ section{
     align-items: center;
 }
 
+.box{
+    width: 36vw;
+    height: 56vh;
+    margin: 5px 15px 5px 15px;
+    background: rgb(220, 248, 198);
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid transparent;
+    border-right: 40px solid rgb(220, 248, 198);
+    position: absolute;
+    top: 0;
+    left: -30px
+}
+
 .rosto{
     width: 275px;
     height: 300px;
@@ -24,9 +48,8 @@ section{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-image: radial-gradient(rgb(255, 187, 0), rgb(255, 187, 0),rgb(255, 187, 0), rgb(173, 104, 0), rgb(110, 66, 0));
+    background-image: radial-gradient(rgb(255, 234, 41), rgb(255, 234, 41),rgb(245, 209, 8), rgb(173, 104, 0), rgb(99, 51, 5));
     border-radius: 50%;
-    border: 1px solid black;
 }
 
 .rosto>div:nth-child(1){
@@ -40,8 +63,18 @@ section{
 .olhos{
     width: 30px;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     border-radius: 50%;
     background-image: linear-gradient( #4B370B, #895021)
+}
+
+.brilho{
+    height: 50%;
+    width: 56%;
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(255, 254, 252, 0.822), rgba(110, 66, 0, 0));
 }
 
 .boca{
